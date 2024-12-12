@@ -52,3 +52,19 @@ WHERE Employees.Role = 'Graphic Designer';
 4. ERROR IN GETTING THE TABLE RESULTS, BUT BASICALLY THAT HOW THE CODE SHOULD LOOK LIKE
 
                             -------------
+                        
+1.SELECT Name, Points
+FROM students
+ORDER BY Points DESC
+LIMIT 1;
+2. SELECT AVG(Points) AS AvgPoints
+FROM students;
+3. SELECT count (*) from students 
+WHERE points = 500;
+4.SELECT Name
+FROM students
+WHERE name like "%s%";
+5. SELECT *
+FROM students
+ORDER BY Points DESC;
+6. Done
