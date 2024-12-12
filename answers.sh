@@ -10,4 +10,26 @@ WHERE name = "Basma";
 7. UPDATE students
 set points = points - 15
 where name ="Alex"
-8. 
+8. Done
+                            -------------
+
+CREATE table graduates(
+ ID Integer Not Null Primary key Autoincrement,
+ Name Text Not Null Unique,
+ Age Integer,
+ Gender Text,
+ Points Integer,
+ Graduation Text);
+
+1. INSERT INTO graduates (id,name,age,Gender,Points)
+SELECT id,name,age,Gender,Points
+FROM students
+WHERE name="Layal"; 
+2.UPDATE graduates
+SET Graduation = "08/09/2018"
+WHERE Name = "Layal";
+//use update because INSERT is used to "enter a new ROW"
+3.DELETE FROM students
+WHERE name = "Layal";
+4.Done
+                            -------------
