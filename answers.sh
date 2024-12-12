@@ -33,3 +33,22 @@ WHERE Name = "Layal";
 WHERE name = "Layal";
 4.Done
                             -------------
+
+1. CREATE TABLE Jcomp AS
+SELECT Employees.Name AS Employee_Name_c, 
+       Employees.Role AS Employee_Role_c, 
+       Companies.Name AS Company_Name_c, 
+       Companies.Date AS Company_Date_c
+FROM Employees
+JOIN Companies ON Employees.Company = Companies.ID;
+2. SELECT Employees.Name AS EmployeeName
+FROM Employees
+JOIN Companies ON Employees.Company = Companies.ID
+WHERE Companies.Date < '2000-01-01';
+3. SELECT Companies.Name AS CompanyName
+FROM Employees
+JOIN Companies ON Employees.Company = Companies.ID
+WHERE Employees.Role = 'Graphic Designer';
+4. ERROR IN GETTING THE TABLE RESULTS, BUT BASICALLY THAT HOW THE CODE SHOULD LOOK LIKE
+
+                            -------------
